@@ -1,21 +1,16 @@
-body{
-    margin: 0;
-    /* text-align: center; */
-    position: relative;
-}
+body {
+  margin: 0;
+  /* text-align: center; */
+  position: relative; }
 
-body form{
- 
-    width: 300px;
-    height: auto;
-    background-color: antiquewhite;
-    /* position: relative;
-    left: 40%; */
+body form {
+  width: 300px;
+  height: auto;
+  background-color: antiquewhite;
+  /* position: relative;
+    left: 40%; */ }
 
-}
-
-form input{
-    width: 250px;
-    height: 60px;
-    margin: 15px;
-}
+form input {
+  width: 250px;
+  height: 60px;
+  margin: 15px; }

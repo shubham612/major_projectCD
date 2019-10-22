@@ -1,0 +1,39 @@
+$primary-color: #007CAA;
+$my-fSyle:  sans-serif;
+header{
+    height: auto;
+    width: 100%;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    div{
+        display: inline-block;
+        width: 60%;
+        font-family: $my-fSyle;
+        margin-left: 8%;
+        font-size: 15px;
+        // font-style: bold;
+    }
+    ul{
+        list-style: none;
+        float: right;
+        li{
+            display: inline-block;
+            margin: 5px 10px 5px 10px;
+            button{
+                background-color: white;
+                color: grey;
+                border: none;
+                padding: 10px 20px;
+                font-weight: bold;
+                font-size: 18px;
+                font-family: $my-fSyle;
+                cursor: pointer;
+                border-radius: 7px;
+                box-sizing: border-box;
+            }
+        }
+    }
+}

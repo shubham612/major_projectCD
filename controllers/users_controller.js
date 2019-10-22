@@ -6,12 +6,22 @@ module.exports.profile = function(req,res){
 }
 
 module.exports.signUp = function(req,res){
+
+   if(req.isAuthenticated()){
+      return res.redirect('/users/profile');
+   }
    return  res.render('signUp',{
       title: "Sign-Up | Form"
   });
 }
 
 module.exports.signIn = function(req,res){
+
+
+   if(req.isAuthenticated()){
+      return res.redirect('/users/profile');
+   }
+   
    return  res.render('signIn',{
       title: "Sign-in | Form"
   });
@@ -38,5 +48,11 @@ module.exports.create = function(req,res){
 }
 
 module.exports.createSession = function(req,res){
-   // To- Do later
+   
+   return res.redirect('/');
+}
+
+module.exports.destroySession = function(req,res){
+   req.logout();
+   return res.redirect('/');
 }

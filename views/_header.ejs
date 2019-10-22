@@ -1,3 +1,44 @@
+<link rel="stylesheet" href="/css/header.css">
 <header>
-    Page Header
+    <div><h1>Codeial</h1></div>
+    <ul>
+        <% if(locals.user) {%>
+             <li>
+                <a href="/users/profile">
+                   <button>
+                      <%=user.name%>
+                   </button>
+                 </a>
+             </li>
+            
+            
+            <li>
+                 <a href="/users/sign-out">
+                    <button>
+                       Sign-out
+                    </button>
+                 </a>
+            </li>
+            
+            
+        <% }else{ %>
+            <li>
+                <a href="/users/sign-up">
+                    <button>
+                        Sign-up
+                    </button>
+                </a>
+            </li>
+                
+                
+            <li>
+                <a href="/users/sign-in">
+                    <button>
+                        Sign-in
+                    </button>
+                </a>
+            </li>
+                      
+       <%} %>
+    </ul>
 </header>
