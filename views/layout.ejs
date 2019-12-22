@@ -3,6 +3,7 @@
         <title>
              <%=title %>
         </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="/css/layout.css" >
         <link rel="sylesheet"  href="/css/header.css">
         <link rel="sylesheet"  href="/css/footer.css">
@@ -10,6 +11,9 @@
     </head>
     <body>
      <%- include('_header'); %>
+     <%if(flash.success && flash.success.length>0) { %>
+        <h4 style="color: green; text-align: center;"><%=flash.success%></h4>  
+     <% } %>
      <main id="layout-main">
         <%- body %>
      </main>
